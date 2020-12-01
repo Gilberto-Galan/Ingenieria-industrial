@@ -1,0 +1,11 @@
+    width: 42px;
+    height: 42px;
+    /*border-radius: 100%;*/
+    /*line-height: 42px;*/
+    /*text-align: center;*/
+    /*color: white;*/
+
+    top: 42px;
+    right: 120px;
+    background: blue;
+

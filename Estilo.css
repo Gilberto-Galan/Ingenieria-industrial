@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+body
+{
+    background-color: #b7bdb2;
+    color: black;
+    font-family: 'Castoro', serif;
+    background-image: url(img/rod.jpg);
+    background-repeat: no-repeat;
+    background-size: 235%;
+    background-color: gray;
+}
+
+a
+{
+    text-decoration: none;
+    color:dodgerblue;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+img
+{
+    width: 100%;
+}
+
+/*Barra de navegación*/
+#navbar
+{
+    background-color: #5da34f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    /*overflow: hidden;*/
+    z-index: 100;
+}
+
+#navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.lista-sm
+{
+    display: block;
+}
+
+/*Barra de navegación*/
+#navbar li
+{
+    float: left;
+}
+
+#navbar li a
+{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: aliceblue;
+}
+
+#navbar li.active a
+{
+    color:red;
+}
+
+#navbar li a:hover
+{
+    background-color:coral;
+    color: black;
+}
+
+/*Formulario de Contacto*/
+/*el formulario se trabaja con
+PHP o Javascript en comunicación
+de servidor teniendo en cuenta
+una Base de datos para almacenar
+todo los usuario*/
+form
+{
+    max-width: 750px;
+    border: 1px solid #792626;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+form div
+{
+    padding: 15px;
+}
+
+input
+{
+    width: 80%;
+    display: block;
+}
+
+button
+{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+}
+
+/*Icono*/
+.myicono
+{
+    color: aliceblue;
+    font-size: 1.5em;
+    padding: 10px;
+    display: none;
+}
+
+/*Contenido*/
+#content
+{
+    /*border: 1px solid;*/
+    max-width: 1180px;
+    position: relative;
+    top: 80px;
+    margin: 0px auto;
+    background-color: #74ca8e;
+    padding: 2%;
+}
+
+/*
+#content header
+{
+    border:1px solid;
+    height: 120px;
+    padding: 10px 20px;
+    background-color: azure;
+    border-radius: 1em;
+}
+*/
+
+#Content header img
+{
+    width: 900px;
+    height: 800px;
+}
+
+#principal
+{
+    /*border: 1px solid;*/
+    /*width: 40%;*/
+    float: left;
+    padding: 5px;
+}
+
+#Parrafo
+{
+    font-size: 20px;
+}
+
+#img3 
+{
+    width: 300px;
+    height: 300px;
+}
+
+#img4
+{
+    width: 400px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+}
+
+#secundario
+{
+    /*border: 1px solid;*/
+    /*width: 40%;*/
+    float: left;
+    padding: 5px;
+}
+
+#listas
+{
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+}
+
+#tercer
+{
+    border: 1px solid;
+    float: left;
+    padding: 5px;
+    background-color: #67c49d;
+}
+
+#tercer p
+{
+    font-size: 20px;
+} 
+
+#content aside
+{
+    /*border: 1px solid;*/
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+
+#content #imgforo
+{
+    height: 250px;
+}
+
+#content footer
+{
+    clear: both;
+    /*border: 1px solid;*/
+    width: 100%;
+    background-color: #458169;
+    border-radius: 1em;
+    height: 30px;
+    padding: 2px;
+}
+
+/*Medida responsivo*/
+@media screen and (max-width: 820px)
+{
+
+    #content
+    {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    #content header
+    {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #principal
+    {
+        padding: 3%;
+        width: 45%;
+    }
+
+    #img3 
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    #img4
+    {
+        width: 70%;
+        height: 70%;
+        margin: 10px 10px 10px 10px;
+    }
+
+
+    #secundario
+    {
+        float: right;
+        padding: 3%;
+        width: 45%;
+    }
+
+    #tercer
+    {
+        float: right;
+        padding: 3%;
+        width: 100%;
+        margin: -30px 3px 10px 10px;
+    }
+
+    #tercer p
+    {
+        font-size: 20px;
+    }
+    
+    #content aside
+    {
+        clear: both;
+        padding: 5%;
+        width:100%;
+    }
+
+    #content #imgforo
+    {
+        height: 80%;
+    }
+
+    #content footer
+    {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+
+    body
+    {
+        background-size: 500%;
+    }
+
+    #content
+    {
+        width: auto;
+    }
+
+    /*#content header
+    {
+        margin:110px 10px 30px 20px;
+    }*/
+
+    #principal
+    {
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #secundario
+    {
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #tercer
+    {
+        width: auto;
+        float: none;
+        margin: 0px;
+    }
+
+    #tercer p
+    {
+        font-size: 20px;
+    }   
+
+    #content aside
+    {
+        padding: 0;
+        width: auto;
+    }
+
+    #content footer
+    {
+        width: auto;
+    }
+
+    /*#navbar ul
+    {
+        display: none;
+    }*/
+
+    .lista-sm
+    {
+        display: none;
+    }
+
+    #navbar li
+    {
+        float: none;
+        display: block;
+    }
+
+    #navbar li a
+    {
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .myicono
+    {
+        display: block;
+        text-align: right;
+    }
+}
