@@ -218,6 +218,12 @@ button
     height: 250px;
 }
 
+
+#subtitulo
+{
+    margin: 15px 10px 10px 10px;
+}
+
 #content footer
 {
     clear: both;
@@ -251,6 +257,21 @@ button
         width: 45%;
     }
 
+    #slider
+    {
+        width: 45%;
+    }
+
+    #slides
+    {
+        width: 45%;
+    }
+
+    #img12
+    {
+        width: 45%;
+    }
+    
     #img3 
     {
         width: 50%;
